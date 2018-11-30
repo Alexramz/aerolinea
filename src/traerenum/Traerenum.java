@@ -39,29 +39,49 @@ public class Traerenum {
             {
                 
                 case 1:
+                   try{
                     System.out.println("--Ingresa la Empresa-- \n(OPCIONES) \n*volaris \n*interjet\n*viva");
                     empresa =scanStr.nextLine();
                     empres = Enum.valueOf(Eaero.class, empresa);
+                   }
+                   catch(Exception e){
+                       System.err.println("Aerolinea no valida");
+                       
+                   }
                     break;
                 case 2:
+                   try{
                     System.out.println("--Ingrsa el Nombre del Vuelo--");
                     vuelo=scanStr.nextLine();
                     objvuel.setNombre(vuelo);
                     objvuel.setEmpresa(empres);
+                   }
+                   catch(Exception e){
+                       System.err.println("Ingresa primero la empresa en la que deseas viajar");
+                   }
                     break;
                 case 3:
+                    try{
                     System.out.println("--Ingresa el Nombre del Pasajero--");
                     pasajero=scanStr.nextLine();
                     objpersona1.setNombre(pasajero);
                     objpersona1.setVuelo(objvuel);
+                    }
+                       catch(Exception e){
+                       System.err.println("Ingresa primero el vuelo");
+                   }
                     break;
                 case 4:
-                    System.out.println("---------------TICKET-------------------");
+                    try{
+                    System.err.println("---------------TICKET-------------------");
                     System.out.println("----------------------------------------");
                     System.out.println("Nombre: "+objpersona1.getNombre()+" \nVuelo: "+objpersona1.getVuelo().getNombre()+" \nEmpresa: "+objpersona1.getVuelo().getEmpresa().getEmvuelo());
                     System.out.println("----------------------------------------");
-                    System.out.println("---------------TICKET-------------------");
-                    
+                    System.err.println("---------------TICKET-------------------");
+                    }
+                    catch(Exception e){
+                       System.err.println("Primero ingresa los campos anteriores");
+                   }
                     break;
                 
                 default:

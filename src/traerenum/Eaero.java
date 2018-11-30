@@ -12,7 +12,7 @@ package traerenum;
 public enum Eaero {
     volaris("Volaris"),
     interjet("Interjet"),
-    viva("Vivaaervobus"),;
+    viva("VivAervobus"),;
     
     private final String emvuelo;
     
