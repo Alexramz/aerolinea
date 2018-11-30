@@ -39,7 +39,7 @@ public class Traerenum {
             {
                 
                 case 1:
-                    System.out.println("--Ingresa la Empresa-- \n(OPCIONES) \n*nvolaris \n*interjet\n*viva");
+                    System.out.println("--Ingresa la Empresa-- \n(OPCIONES) \n*volaris \n*interjet\n*viva");
                     empresa =scanStr.nextLine();
                     empres = Enum.valueOf(Eaero.class, empresa);
                     break;
@@ -56,11 +56,11 @@ public class Traerenum {
                     objpersona1.setVuelo(objvuel);
                     break;
                 case 4:
-                    System.out.println("--------------------TICKET--------------------");
+                    System.out.println("---------------TICKET-------------------");
                     System.out.println("----------------------------------------");
-                    System.out.println("nombre: "+objpersona1.getNombre()+" Vuelo: "+objpersona1.getVuelo().getNombre()+" Empresa: "+objpersona1.getVuelo().getEmpresa().getEmvuelo());
+                    System.out.println("Nombre: "+objpersona1.getNombre()+" \nVuelo: "+objpersona1.getVuelo().getNombre()+" \nEmpresa: "+objpersona1.getVuelo().getEmpresa().getEmvuelo());
                     System.out.println("----------------------------------------");
-                    System.out.println("----------------------------------------");
+                    System.out.println("---------------TICKET-------------------");
                     
                     break;
                 
